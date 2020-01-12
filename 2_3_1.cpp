@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//三元运算符
 int main(){
     int a,b,x;
     cout << "input value of a:\n";
