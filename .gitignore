@@ -8,4 +8,4 @@
 !*/
 # 不忽略文件.gitignore和*.foo
 !.gitignore
-!*.cp
+!*.cpp
