@@ -26,6 +26,7 @@ int fib(int n){
         return 1;
     }else
     {   
+        cout << "Call fib("<< n-2 <<") and fib(" << n-1 << ")\n";
         return fib(n-1)+fib(n-2);
     }
 }
