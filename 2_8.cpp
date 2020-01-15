@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 //输入一个整数，求出它的所有因子
 int main(){
     int n;
