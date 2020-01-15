@@ -10,6 +10,7 @@ double power(double x,int n){
     }
     return val;
 }
+
 int main(){
     double pow;
     pow = power(5,2);
