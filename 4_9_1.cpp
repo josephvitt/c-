@@ -16,7 +16,7 @@
         枚举类对象不可以与整形隐式的互相转换
     3.可以指定底层类型
         enum class Type:char {General,Light,Medium,Heavy}
- */
+
 #include <iostream>
 using namespace std;
 enum class Side {Right,Left};
@@ -30,4 +30,4 @@ int main(){
     return 0;
 }
 
-
+ */
