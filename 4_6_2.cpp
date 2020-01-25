@@ -8,7 +8,7 @@ using namespace std;
 //Point类
 class Point {
     public:
-        //构造函数
+        //构造函数in
         Point(int xx,int yy);
         //拷贝构造函数
         Point(const Point&p);
