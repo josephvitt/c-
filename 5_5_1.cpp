@@ -9,6 +9,17 @@
 1.友元函数是在类声明中由关键字friend修饰说明的非成员函数，在它的函数体中能够通过对象名访问private和protected成员。
 2.作用:增加灵活性，使程序员可以在封装和快速性方面做合理选择。
 3.访问对象中的成员必须通过对象名。
+
+
+友元类
+1.若一个类为另一个类的友元，则此类的所有成员都能够访问对方类的私有成员。
+
+声明语法：将友元类名在另一个类中使用friend修饰说明。
+
+
+注意：
+    类的友元关系是单向的：声明B类是A类的友元 不等于 A类是B类的友元
+
 */
 #include <iostream>
 #include <cmath>
@@ -36,4 +47,32 @@ int main(){
     cout << "The distance is：";
     cout << dist(p1,p2) << endl;
     return 0;
+}
+
+
+class A {
+    friend class B;
+
+    public:
+        void display() {
+            cout << x << endl;
+        }
+    private:
+        int x;
+};
+
+class B {
+    public:
+        void set(int i);
+        void display();
+    private:
+        A a;
+};
+
+void B::set(int i){
+    a.x = i;
+}
+
+void B::display(){
+    a.display();
 }
