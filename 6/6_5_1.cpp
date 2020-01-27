@@ -15,7 +15,5 @@ int main(){
         e+=2;
         std::cout << e << std::endl;
     }
-
-
     return 0;
 }
