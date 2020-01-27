@@ -14,7 +14,7 @@ int main(){
     cout << "Enter the " << NUM_QUES << " question tests:" << endl;
     while (cin.get(c))
     {
-        //判断回车
+        //判断
         if(c != '\n'){
             if(c == key[ques]){
                 numCorrect++;
@@ -31,5 +31,6 @@ int main(){
             cout << endl;
         }
     }
+    
     return 0;
 }
