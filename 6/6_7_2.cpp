@@ -45,11 +45,13 @@ void SavingAccount::record(int date,double amount){
     //保留小数点后两位
     amount = floor(amount*100+0.5)/100;
     balance += amount;
+    /*
     if(){
         
     }else{
         record(date,-amount);
     }
+    */
 }
 
 void SavingAccount::settle(int date){
