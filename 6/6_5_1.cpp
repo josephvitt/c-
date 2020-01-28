@@ -9,11 +9,12 @@ int main(){
         *p += 2;
         std::cout << *p << std::endl;
     }
-    */
+    
     int array[3] = {1,2,3};
     for(int &e : array){
         e+=2;
         std::cout << e << std::endl;
     }
     return 0;
+    */
 }
