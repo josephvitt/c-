@@ -44,7 +44,8 @@ int main(){
 
     for(int i=0;i<3;i++){
         for(int j=0;j<3;j++){
-            swap(a[i][j],a[j][i]);
+            if(j>i)
+                swap(a[i][j],a[j][i]);
         }
     }
 
