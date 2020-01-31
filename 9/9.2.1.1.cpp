@@ -18,10 +18,6 @@ template<typename T>
 T abs(T x){
     return x <0 ? -x :x;
 }
-
-
-
-
 */
 #include <iostream>
 using namespace std;
