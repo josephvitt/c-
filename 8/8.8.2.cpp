@@ -3,6 +3,8 @@
 由此派生出自行车（bicycle）类、汽车（motorcar）类，
 从bicycle和motorcar派生出摩托车（motorcycle）类，
 他们都有Run、Stop等成员函数
+
+注意:虚基类是解决类成员标识二义性和信息冗余问题，而虚基类是实现动态多态性的基础。
 */
 #include <iostream>
 using namespace std;
