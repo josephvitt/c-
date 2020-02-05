@@ -37,5 +37,17 @@ int main(){
     //用s容器的内容的逆序构造列表容器
     list<int> l(s.rbegin(),s.rend());
     printContainer("list at first",l);
+
+    //将列表容器l的每相邻两个元素顺序颠倒
+    list<int>::iterator iter = l.begin();
+    while(iter !=l.end()){
+        int v = *iter;
+        iter = l.erase(iter);
+        l.insert(++iter,v);
+    }
+    printContainer("list at last",l);
+    //用列表容器l的内容给s赋值，将s输出
+    s.assign(l.begin(),l.end());
+    printContainer("deque at last",s);
     return 0;
 }
