@@ -1,6 +1,7 @@
 /*
 细胞分裂模拟
 */
+/*
 #include <iostream>
 using namespace std;
 const int SPLIT_TIME_MIN = 500;//细胞分裂最短时间
@@ -33,17 +34,18 @@ class Cell {//细胞类
         }
 };
 int Cell::count = 0;
+*/
 
-int main(){
-    srand(static_cast<unsigned>(time(0)));
-    int t;//模拟时间长度
-    cout << "Simulation time: ";
-    cin >> t;
-    cellQueue.push(Cell(0));//将第一个细胞艳茹优先级队列
-    while (cellQueue.top().getSplitTime() <= t)
-    {
-        cellQueue.top().split();//模拟下一个细胞的分裂
-        cellQueue.pop();//将刚刚分裂的细胞弹出
-    }
-    return 0;
-}
+// int main(){
+//     srand(static_cast<unsigned>(time(0)));
+//     int t;//模拟时间长度
+//     cout << "Simulation time: ";
+//     cin >> t;
+//     cellQueue.push(Cell(0));//将第一个细胞艳茹优先级队列
+//     while (cellQueue.top().getSplitTime() <= t)
+//     {
+//         cellQueue.top().split();//模拟下一个细胞的分裂
+//         cellQueue.pop();//将刚刚分裂的细胞弹出
+//     }
+//     return 0;
+// };
